@@ -1,0 +1,7 @@
+<div class="home-container">
+  <div *ngFor="let device of devices" class="device-card">
+    <h3 class="device-header">{{ device.name }}</h3>
+    <p class="device-body">Propietario: {{ device.owner }}</p>
+    <p class="device-body">{{ device.ownerData }}</p>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+.profile-container {
+    padding: 20px;
+    background-color: #e7ecef;
+  }
+  
+  .profile-card {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-name {
+    color: #274c77;
+    font-size: 1.4em;
+  }
+  
+  .device-card {
+    margin-top: 10px;
+  }
+  
+  .device-card h4 {
+    color: #6096ba;
+  }
+  
+  .device-card p {
+    color: #a3cef1;
+  }
+  

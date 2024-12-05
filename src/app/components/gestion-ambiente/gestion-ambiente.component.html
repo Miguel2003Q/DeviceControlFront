@@ -1,0 +1,11 @@
+<div class="ambientes-container">
+  <div *ngFor="let ambiente of ambientes" class="ambiente-card">
+    <h3>{{ ambiente.nombreAmbiente }}</h3>
+  </div>
+
+  <h3>Instructores</h3>
+
+  <div *ngFor="let instructor of instructores" class="ambiente-card">
+    <h3>{{ instructor.nombre_instructor }}</h3>
+  </div>
+</div>

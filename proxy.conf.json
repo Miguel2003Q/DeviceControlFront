@@ -1,0 +1,20 @@
+{
+    "/instructores": {
+      "target": "http://localhost:8080",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug"
+    },
+    "/ambientes": {
+      "target": "http://localhost:8080",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug"
+    },
+    "/activos": {
+      "target": "http://localhost:8080",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug"
+    }
+}
