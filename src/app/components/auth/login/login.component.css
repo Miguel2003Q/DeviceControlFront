@@ -1,36 +1,90 @@
-form {
-    max-width: 400px;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-  }
-  
-  label {
-    display: block;
-    margin: 10px 0 5px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:disabled {
-    background-color: #ccc;
-  }
-  
+
+/* Contenedor del login */
+.login-container {
+  background: #ffffff;
+  color: #003366;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 51, 102, 0.5);
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto; /* Centra horizontalmente */
+  display: block; /* Asegura que respete el margen automático */
+}
+
+/* Encabezado */
+.login-header {
+  margin-bottom: 20px;
+}
+
+.login-header h2 {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.login-header p {
+  font-size: 16px;
+  color: #0056b3;
+}
+
+/* Formulario */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Campos del formulario */
+.form-group {
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #003366;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #0056b3;
+  background-color: #f4f8ff;
+  color: #003366;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #003366;
+}
+
+/* Botón de enviar */
+.cta-button {
+  background-color: #003366;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Mensajes de error */
+.error-text {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}

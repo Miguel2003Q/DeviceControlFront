@@ -1,10 +1,25 @@
-<h2>Login</h2>
-<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-  <label>Email:</label>
-  <input type="email" formControlName="email" required />
-  
-  <label>Contraseña:</label>
-  <input type="password" formControlName="password" required />
-  
-  <button type="submit" [disabled]="!loginForm.valid">Iniciar Sesión</button>
-</form>
+<div class="login-container">
+  <div class="login-header">
+      <h2>Inicia Sesión</h2>
+      <p>Accede a tu cuenta</p>
+  </div>
+  <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+          <label for="email"><strong>Correo Electrónico:</strong></label>
+          <input type="email" id="email" formControlName="email" required>
+          <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
+              <small class="error-text">Correo inválido</small>
+          </div>
+      </div>
+
+      <div class="form-group">
+          <label for="password"><strong>Contraseña:</strong></label>
+          <input type="password" id="password" formControlName="password" required>
+          <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+              <small class="error-text">La contraseña debe tener al menos 6 caracteres</small>
+          </div>
+      </div>
+
+      <button type="submit" class="cta-button" [disabled]="!loginForm.valid">Iniciar Sesión</button>
+  </form>
+</div>

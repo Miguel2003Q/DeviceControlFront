@@ -1,29 +1,83 @@
-
+/* Estilos generales del navbar */
 .navbar {
-    background-color: #274c77;
-    padding: 15px 0;
-  }
-  
-  .nav-list {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-  }
-  
-  .nav-list li {
-    margin: 0 20px;
-  }
-  
-  .nav-list a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-list a:hover {
-    color: #a3cef1;
-  }
-  
+  background-color: #003366; /* Azul oscuro */
+  color: white;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Lista de navegación */
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+/* Enlaces */
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Hover en enlaces */
+.nav-list li a:hover {
+  background-color: #00509E; /* Azul más claro para contraste */
+  color: white;
+}
+
+/* Dropdown (Gestión de Ambientes) */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #003366; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 5px 0;
+  list-style: none;
+  min-width: 180px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Estilos del dropdown */
+.dropdown-menu li {
+  padding: 8px 15px;
+}
+
+.dropdown-menu li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #00509E; /* Azul más claro para contraste */
+}
+
+/* Botón de cerrar sesión */
+.nav-list li a[click] {
+  background-color: #8B0000; /* Rojo institucional para cerrar sesión */
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.nav-list li a[click]:hover {
+  background-color: #600000;
+}
